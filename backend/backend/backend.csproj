@@ -17,6 +17,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="NuGet.PackageManagement" Version="6.8.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +31,9 @@
     <None Remove="Core\Entities\" />
     <None Remove="Core\AutoMapperConfig\" />
     <None Remove="Core\Enums\" />
+    <None Remove="Core\Dtos\Company\" />
+    <None Remove="Core\Dtos\Job\" />
+    <None Remove="Core\Dtos\Candidate\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -36,5 +43,8 @@
     <Folder Include="Core\Entities\" />
     <Folder Include="Core\AutoMapperConfig\" />
     <Folder Include="Core\Enums\" />
+    <Folder Include="Core\Dtos\Company\" />
+    <Folder Include="Core\Dtos\Job\" />
+    <Folder Include="Core\Dtos\Candidate\" />
   </ItemGroup>
 </Project>
