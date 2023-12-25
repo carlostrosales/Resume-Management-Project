@@ -34,6 +34,8 @@
     <None Remove="Core\Dtos\Company\" />
     <None Remove="Core\Dtos\Job\" />
     <None Remove="Core\Dtos\Candidate\" />
+    <None Remove="documents\" />
+    <None Remove="documents\pdfs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -46,5 +48,7 @@
     <Folder Include="Core\Dtos\Company\" />
     <Folder Include="Core\Dtos\Job\" />
     <Folder Include="Core\Dtos\Candidate\" />
+    <Folder Include="documents\" />
+    <Folder Include="documents\pdfs\" />
   </ItemGroup>
 </Project>
