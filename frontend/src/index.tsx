@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import ThemeContextProvider from "./context/theme.context";
+import { BrowserRouter } from "react-router-dom";
+
 import "./global.scss";
 
 const root = ReactDOM.createRoot(
@@ -9,8 +11,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <ThemeContextProvider>
-    <React.StrictMode>
+    <BrowserRouter>
       <App />
-    </React.StrictMode>
+    </BrowserRouter>
   </ThemeContextProvider>
 );
