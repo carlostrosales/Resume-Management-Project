@@ -1,11 +1,15 @@
- import React from 'react';
- import "./home.scss";
+import React from "react";
+import "./home.scss";
 
+const Home = () => {
+  return (
+    <div className="content home">
+      <h3>Welcome To Website</h3>
+      <br />
+      <br />
+      <span>Lorem ipsum dolor sit</span>
+    </div>
+  );
+};
 
- const Home = () => {
-    return (
-        <div>Home</div>
-    )
- }
-
- export default Home;
+export default Home;
