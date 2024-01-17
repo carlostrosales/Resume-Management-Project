@@ -1,4 +1,5 @@
 import React from "react";
+import "./jobs-grid.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { Box } from "@mui/material";
 import { GridColDef } from "@mui/x-data-grid/models";

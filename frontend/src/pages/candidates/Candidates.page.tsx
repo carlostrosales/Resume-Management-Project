@@ -1,15 +1,14 @@
-import "./jobs.scss";
+import "./candidates.scss";
 import httpModule from "../../helpers/http.module";
 import { useState, useEffect } from "react";
-import { IJob } from "../../types/global.typing";
-import { Button } from "@mui/material";
+import { ICandidate } from "../../types/global.typing";
+import { Button, CircularProgress } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import JobsGrid from "../../components/jobs/JobsGrid.components";
-import { CircularProgress } from "@mui/material";
+import CandidatesGrid from "../../components/candidates/CandidatesGrid.components";
 
 const Candidates = () => {
-  const [candidates, setCandidates] = useState<IJob[]>([]);
+  const [candidates, setCandidates] = useState<ICandidate[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const redirect = useNavigate();
 
@@ -41,7 +40,7 @@ const Candidates = () => {
       ) : candidates.length == 0 ? (
         <h1>No Candidate</h1>
       ) : (
-        <CandidatesGrid data={jobs} />
+        <CandidatesGrid data={candidates} />
       )}
     </div>
   );
